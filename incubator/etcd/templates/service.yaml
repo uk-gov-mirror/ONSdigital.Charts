@@ -3,7 +3,6 @@ kind: Service
 metadata:
   annotations:
     service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
-metadata:
   name: {{ template "etcd.fullname" . }}
   labels:
     heritage: {{ .Release.Service | quote }}
